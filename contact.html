@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Joe's Resume: Contact Me</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Oxygen&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div id="container">
+            <header id="header-content">
+                <h1>Joe's Resume</h1>
+                <nav id="header-nav">
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="https://bdrummo6.github.io/portfolio-website" target="_blank">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </header>
+
+            <main>
+                <section id="contact-container">
+                    <form action="" target="">
+                        <h3>Contact Form</h3>
+                        <div id="name-container">
+                            <label for="name"></label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name" size="37">
+                        </div>
+
+                        <div id="email-container">
+                            <label for="email"></label>
+                            <input type="text" name="email" id="email" placeholder="Enter your email" size="37">
+                        </div>
+
+                        <div id="phone-container">
+                            <label for="phone"></label>
+                            <input type="text" name="phone" id="phone" placeholder="Enter your phone number" maxlength="14" size="37">
+                        </div>
+
+                        <div id="message-container">
+                            <label for="message"></label>
+                            <textarea id="message" rows="10" cols="50" placeholder="Enter your message"></textarea>
+                        </div>
+
+                        <div id="response-container">
+                            <p>How would you like me to respond to your message?</p>
+
+                            <div id="email-phone-response-container">
+                                <label for="email-response">Email</label>
+                                <input type="radio" name="response" id="email-response">
+
+                                <label for="phone-response">Phone</label>
+                                <input type="radio" name="response" id="phone-response">
+                            </div>
+
+                        </div>
+
+                        <div id="submit-reset-container">
+                            <input type="submit" name="submit-reset" id="submit-button" value="Submit">
+
+                            <input type="reset" name="submit-reset" id="reset-button" value="Reset">
+                        </div>
+                    </form>
+                </section>
+            </main>
+
+            <footer>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="https://bdrummo6.github.io/portfolio-website" target="_blank">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </footer>
+        </div>
+    </body>
+</html>
