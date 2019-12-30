@@ -64,69 +64,253 @@ html, body {
 }
 
 /* My code is after this */
-body {
-	width: 90%;
-}
 
-header {
+@color1: #87CEFA;
+@color2: #778899; /* lightgray color variable */
+@border-style1: 1px solid  @color1; /* border styling variable */
+@border-style2: 3px dashed silver;
+@font-stack1: Oxygen, 'Fjalla One', sans-serif;
+@font-size1: 1.3em;
+@font-size2: 1.9em;
+@font-size3: 1.1em;
+
+#container {
 	width: 100%;
 	display: flex;
-	padding-top: 20px;
-	margin-bottom: 50px;
+	flex-direction: column;
+	font-family: @font-stack1;
+
+	#header-content {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		padding: 30px 0 30px 0;
+		background: @color1;
+		border: @border-style2;
+
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			text-align: center;
+			margin-left: 30px;
+		}
+	}
 
 	#header-nav {
-		width: 100%;
+		width: 80%;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
 
 		a {
+			text-decoration: none;
+			color: gray;
 			margin: 0 20px 0 20px;
 		}
 	}
-}
-
-main {
-	width: 100%;
-}
-
-h1 {
-	font-size: 4em;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-h2 {
-	font-size: 2.0em;
-	font-weight: bold;
-}
-
-#intro {
-	width: 100%;
-	margin: 20px;
-	display: flex;
-	justify-content: center;
-	align-content: center;
 
 
-	#intro-photo {
-		width: 45%;
+	main {
+		width: 100%;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
+		align-content: center;
+		background: @color2;
+		padding: 30px 0 30px 0;
 
-		img {
-			width: 90%;
+		h2 {
+			font-size: 2.2em;
+			font-weight: bold;
+			text-align: center;
+			margin: 10px 0 10px 0;
 		}
 	}
 
-	#intro-text {
-		width: 45%;
+	#intro {
+		width: 100%;
+		margin: 20px;
 		display: flex;
 		justify-content: center;
+		align-content: center;
 
-		p {
-			width: 90%;
+
+		#intro-photo {
+			width: 45%;
+			display: flex;
+			justify-content: center;
+
+			img {
+				width: 400px;
+				height: 300px;
+			}
+		}
+
+		#intro-text {
+			width: 45%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			p {
+				width: 90%;
+				font-size: @font-size1;
+				line-height: 1.5em;
+			}
 		}
 	}
+
+	#skills-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 20px 0 20px 0;
+
+		h3 {
+			text-align: center;
+			font-weight: bold;
+			font-size: @font-size2;
+			margin: 10px 0 10px 0;
+		}
+	}
+
+	#skills-list-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		margin: 10px 0 10px 20px;
+		padding: 10px;
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			list-style-type: circle;
+			font-size: @font-size1;
+			line-height: 2em;
+		}
+	}
+
+	#work-history-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px 0 40px 0;
+	}
+
+	#work-history-table {
+		width: 80%;
+		border: @border-style1;
+		background: #ffffff;
+		color: black;
+
+		caption {
+			font-size: @font-size2;
+			font-weight: bold;
+			margin: 10px 0 20px 0;
+		}
+
+		th {
+			height: 60px;
+			border: @border-style1;
+			font-size: 1.2em;
+			font-weight: bold;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		td {
+			height: 40px;
+			border: @border-style1;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.column-1 {
+			width: 10%;
+		}
+
+		.columns-4-5 {
+			width: 15%;
+		}
+
+	}
+
+
+
+	#contact-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+
+		h3 {
+			text-align: center;
+			font-size: @font-size2;
+			font-weight: bold;
+			margin: 10px 0 20px 0;
+		}
+
+		form {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			div {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+
+		}
+
+		label {
+			font-weight: bold;
+			font-size: @font-size3;
+		}
+
+		input {
+			font-size: @font-size3;
+		}
+
+		#response-container {
+			width: 35%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+
+			p {
+				font-size: @font-size3;
+			}
+		}
+
+		#submit-reset-container {
+			width: 15%;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	footer {
+		#header-content;
+
+		nav {
+			#header-nav;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	@media (max-width: 500px) {
+
+	}
 }
+
+
