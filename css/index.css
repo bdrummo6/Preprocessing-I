@@ -152,11 +152,25 @@ body {
   background: #87CEFA;
   border: 3px dashed silver;
 }
+@media (max-width: 500px) {
+  #container #header-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 15px 0;
+  }
+}
 #container #header-content h1 {
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
   margin-left: 30px;
+}
+@media (max-width: 500px) {
+  #container #header-content h1 {
+    font-size: 1.3em;
+    margin-left: 0;
+  }
 }
 #container #header-nav {
   width: 80%;
@@ -164,10 +178,22 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
+@media (max-width: 500px) {
+  #container #header-nav {
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0 5px 0;
+  }
+}
 #container #header-nav a {
   text-decoration: none;
   color: gray;
   margin: 0 20px 0 20px;
+}
+@media (max-width: 500px) {
+  #container #header-nav a {
+    margin: 10px;
+  }
 }
 #container main {
   width: 100%;
@@ -178,40 +204,71 @@ body {
   background: #778899;
   padding: 30px 0 30px 0;
 }
+@media (max-width: 500px) {
+  #container main {
+    padding: 15px 0 15px 0;
+  }
+}
 #container main h2 {
   font-size: 2.2em;
   font-weight: bold;
   text-align: center;
   margin: 10px 0 10px 0;
 }
-#container #intro {
+@media (max-width: 500px) {
+  #container main h2 {
+    font-size: 1.5em;
+  }
+}
+#container main #intro {
   width: 100%;
   margin: 20px;
   display: flex;
   justify-content: center;
   align-content: center;
 }
-#container #intro #intro-photo {
+@media (max-width: 500px) {
+  #container main #intro {
+    margin: 10px;
+  }
+}
+#container main #intro #intro-photo {
   width: 45%;
   display: flex;
   justify-content: center;
 }
-#container #intro #intro-photo img {
+#container main #intro #intro-photo img {
   width: 400px;
   height: 300px;
 }
-#container #intro #intro-text {
+@media (max-width: 500px) {
+  #container main #intro #intro-photo {
+    display: none;
+  }
+}
+#container main #intro #intro-text {
   width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#container #intro #intro-text p {
+@media (max-width: 500px) {
+  #container main #intro #intro-text {
+    width: 90%;
+  }
+}
+#container main #intro #intro-text p {
   width: 90%;
   font-size: 1.3em;
   line-height: 1.5em;
 }
-#container #skills-container {
+@media (max-width: 500px) {
+  #container main #intro #intro-text p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+}
+#container main #skills-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -219,13 +276,23 @@ body {
   align-items: center;
   margin: 20px 0 20px 0;
 }
-#container #skills-container h3 {
+@media (max-width: 500px) {
+  #container main #skills-container {
+    margin: 10px 0 10px 0;
+  }
+}
+#container main #skills-container h3 {
   text-align: center;
   font-weight: bold;
   font-size: 1.9em;
   margin: 10px 0 10px 0;
 }
-#container #skills-list-container {
+@media (max-width: 500px) {
+  #container main #skills-container h3 {
+    font-size: 1.4em;
+  }
+}
+#container main #skills-list-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -233,32 +300,53 @@ body {
   margin: 10px 0 10px 20px;
   padding: 10px;
 }
-#container #skills-list-container ul {
+#container main #skills-list-container ul {
   display: flex;
   flex-direction: column;
   list-style-type: circle;
   font-size: 1.3em;
   line-height: 2em;
 }
-#container #work-history-container {
+@media (max-width: 500px) {
+  #container main #skills-list-container ul {
+    font-size: 1.2em;
+  }
+}
+#container main #work-history-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0 40px 0;
 }
-#container #work-history-table {
+@media (max-width: 500px) {
+  #container main #work-history-container {
+    padding: 10px 0 30px 0;
+  }
+}
+#container main #work-history-container #work-history-table {
   width: 80%;
   border: 1px solid #87CEFA;
   background: #ffffff;
   color: black;
 }
-#container #work-history-table caption {
+@media (max-width: 500px) {
+  #container main #work-history-container #work-history-table {
+    width: 90%;
+  }
+}
+#container main #work-history-container #work-history-table caption {
   font-size: 1.9em;
   font-weight: bold;
   margin: 10px 0 20px 0;
 }
-#container #work-history-table th {
+@media (max-width: 500px) {
+  #container main #work-history-container #work-history-table caption {
+    font-size: 1.2em;
+    margin: 5px 0 15px 0;
+  }
+}
+#container main #work-history-container #work-history-table th {
   height: 60px;
   border: 1px solid #87CEFA;
   font-size: 1.2em;
@@ -266,62 +354,108 @@ body {
   text-align: center;
   vertical-align: middle;
 }
-#container #work-history-table td {
+@media (max-width: 500px) {
+  #container main #work-history-container #work-history-table th {
+    font-size: 1em;
+  }
+}
+#container main #work-history-container #work-history-table td {
   height: 40px;
   border: 1px solid #87CEFA;
   text-align: center;
   vertical-align: middle;
 }
-#container #work-history-table .column-1 {
+@media (max-width: 500px) {
+  #container main #work-history-container #work-history-table td {
+    font-size: 0.9em;
+  }
+}
+#container main #work-history-container #work-history-table .column-1 {
   width: 10%;
 }
-#container #work-history-table .columns-4-5 {
+#container main #work-history-container #work-history-table .columns-4-5 {
   width: 15%;
 }
-#container #contact-container {
+@media (max-width: 500px) {
+  #container main #work-history-container #work-history-table .columns-4-5 {
+    width: 25%;
+  }
+}
+#container main #contact-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
 }
-#container #contact-container h3 {
+#container main #contact-container h3 {
   text-align: center;
   font-size: 1.9em;
   font-weight: bold;
   margin: 10px 0 20px 0;
 }
-#container #contact-container form {
+@media (max-width: 500px) {
+  #container main #contact-container h3 {
+    font-size: 1.2em;
+    margin: 5px 0 10px 0;
+  }
+}
+#container main #contact-container form {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#container #contact-container form div {
+#container main #contact-container form div {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#container #contact-container label {
+#container main #contact-container label {
   font-weight: bold;
   font-size: 1.1em;
 }
-#container #contact-container input {
+@media (max-width: 500px) {
+  #container main #contact-container label {
+    font-size: 1em;
+  }
+}
+#container main #contact-container input {
   font-size: 1.1em;
 }
-#container #contact-container #response-container {
+@media (max-width: 500px) {
+  #container main #contact-container input {
+    font-size: 1.1em;
+  }
+}
+#container main #contact-container #response-container {
   width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-#container #contact-container #response-container p {
+@media (max-width: 500px) {
+  #container main #contact-container #response-container {
+    width: 70%;
+  }
+}
+#container main #contact-container #response-container p {
   font-size: 1.1em;
 }
-#container #contact-container #submit-reset-container {
+@media (max-width: 500px) {
+  #container main #contact-container #response-container p {
+    font-size: 1em;
+  }
+}
+#container main #contact-container #submit-reset-container {
   width: 15%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  #container main #contact-container #submit-reset-container {
+    width: 40%;
+  }
 }
 #container footer {
   width: 100%;
@@ -332,11 +466,25 @@ body {
   background: #87CEFA;
   border: 3px dashed silver;
 }
+@media (max-width: 500px) {
+  #container footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 15px 0;
+  }
+}
 #container footer h1 {
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
   margin-left: 30px;
+}
+@media (max-width: 500px) {
+  #container footer h1 {
+    font-size: 1.3em;
+    margin-left: 0;
+  }
 }
 #container footer nav {
   width: 80%;
@@ -346,8 +494,20 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  #container footer nav {
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0 5px 0;
+  }
+}
 #container footer nav a {
   text-decoration: none;
   color: gray;
   margin: 0 20px 0 20px;
+}
+@media (max-width: 500px) {
+  #container footer nav a {
+    margin: 10px;
+  }
 }
