@@ -5,7 +5,7 @@ For this project you will be building a digital resume from scratch. You will be
 ## Task 1: Set Up The Project With Git
 
 - [X] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
+- [X] Add your project manager as collaborator on Github.
 - [X] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [X] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
@@ -13,8 +13,8 @@ For this project you will be building a digital resume from scratch. You will be
  
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
+- [] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
 
 ## Task 2: Set up your preprocessor
@@ -28,7 +28,7 @@ Follow these steps for completing your project.
 
 * [X] Review the [example resume](resume-example.png).  Notice how simplistic the example resume is.  Develop a simple layout of your choosing. If you are struggling to be creative, you may use the example resume as your design file. 
 **Note: you are only required to build one page, anything more than that would be stretch.**
-* [ ] The resume content will be provided by you. The content can be about you or a fictional character.  
+* [] The resume content will be provided by you. The content can be about you or a fictional character.  
 * [X] Content: Navigation - Build a simple navigation with 4 items of your choosing
 * [X] Content: Intro - Have a short introduction as to why you would be a good hire
 * [X] Content: Skills - Showcase a list of skills you have somewhere on your resume
