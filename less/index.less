@@ -24,25 +24,31 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -56,4 +62,369 @@ table {
 html, body {
     height: 100%;
 }
+
+/* My code is after this */
+
+@color1: #87CEFA;
+@color2: #778899; /* lightgray color variable */
+@border-style1: 1px solid  @color1; /* border styling variable */
+@border-style2: 3px dashed silver;
+@font-stack1: Oxygen, 'Fjalla One', sans-serif;
+@font-size1: 1.3em;
+@font-size2: 1.9em;
+@font-size3: 1.1em;
+
+
+#container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	font-family: @font-stack1;
+	
+	#header-content {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		padding: 30px 0 30px 0;
+		background: @color1;
+		border: @border-style2;
+
+		@media (max-width: 500px) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 15px 0 15px 0;
+		}
+
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			text-align: center;
+			margin-left: 30px;
+
+			@media (max-width: 500px) {
+				font-size: 1.3em;
+				margin-left: 0;
+			}
+		}
+		
+	}
+	
+	#header-nav {
+		width: 80%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		@media (max-width: 500px) {
+			flex-direction: column;
+			justify-content: center;
+			margin: 20px 0 5px 0;
+		}
+			
+		a {
+			text-decoration: none;
+			color: gray;
+			margin: 0 20px 0 20px;
+
+			@media (max-width: 500px) {
+				margin: 10px;
+			}
+
+		}
+
+	}
+
+	main {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		background: @color2;
+		padding: 30px 0 30px 0;
+
+		@media (max-width: 500px) {
+			padding: 15px 0 15px 0;
+		}
+
+		h2 {
+			font-size: 2.2em;
+			font-weight: bold;
+			text-align: center;
+			margin: 10px 0 10px 0;
+
+			@media (max-width: 500px) {
+				font-size: 1.5em;
+			}
+		}
+
+		#intro {
+			width: 100%;
+			margin: 20px;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+
+			@media (max-width: 500px) {
+				margin: 10px;
+			}
+
+			#intro-photo {
+				width: 45%;
+				display: flex;
+				justify-content: center;
+
+				img {
+					width: 400px;
+					height: 300px;
+				}
+
+				@media (max-width: 500px) {
+					display: none;
+				}
+			}
+
+			#intro-text {
+				width: 45%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				@media (max-width: 500px) {
+					width: 90%;
+				}
+
+				p {
+					width: 90%;
+					font-size: @font-size1;
+					line-height: 1.5em;
+
+					@media (max-width: 500px) {
+						font-size: 1.2em;
+						line-height: 1.2em;
+					}
+				}
+			}
+		}
+
+		#skills-container {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 20px 0 20px 0;
+
+			@media (max-width: 500px) {
+				margin: 10px 0 10px 0;
+			}
+
+			h3 {
+				text-align: center;
+				font-weight: bold;
+				font-size: @font-size2;
+				margin: 10px 0 10px 0;
+
+				@media (max-width: 500px) {
+					font-size: 1.4em;
+				}
+			}
+		}
+
+		#skills-list-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			margin: 10px 0 10px 20px;
+			padding: 10px;
+
+			ul {
+				display: flex;
+				flex-direction: column;
+				list-style-type: circle;
+				font-size: @font-size1;
+				line-height: 2em;
+
+				@media (max-width: 500px) {
+					font-size: 1.2em;
+				}
+			}
+
+		}
+
+		#work-history-container {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 20px 0 40px 0;
+
+			@media (max-width: 500px) {
+				padding: 10px 0 30px 0;
+			}
+
+			#work-history-table {
+				width: 80%;
+				border: @border-style1;
+				background: #ffffff;
+				color: black;
+
+				@media (max-width: 500px) {
+					width: 90%;
+				}
+
+				caption {
+					font-size: @font-size2;
+					font-weight: bold;
+					margin: 10px 0 20px 0;
+
+					@media (max-width: 500px) {
+						font-size: 1.2em;
+						margin: 5px 0 15px 0;
+					}
+				}
+
+				th {
+					height: 60px;
+					border: @border-style1;
+					font-size: 1.2em;
+					font-weight: bold;
+					text-align: center;
+					vertical-align: middle;
+
+					@media (max-width: 500px) {
+						font-size: 1.0em;
+					}
+				}
+
+				td {
+					height: 40px;
+					border: @border-style1;
+					text-align: center;
+					vertical-align: middle;
+
+					@media (max-width: 500px) {
+						font-size: 0.9em;
+					}
+				}
+
+				.column-1 {
+					width: 10%;
+
+				}
+
+				.columns-4-5 {
+					width: 15%;
+
+					@media (max-width: 500px) {
+						width: 25%;
+					}
+				}
+
+			}
+		}
+
+		#contact-container {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+
+			h3 {
+				text-align: center;
+				font-size: @font-size2;
+				font-weight: bold;
+				margin: 10px 0 20px 0;
+
+				@media (max-width: 500px) {
+					font-size: 1.2em;
+					margin: 5px 0 10px 0;
+				}
+			}
+
+			form {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				div {
+					margin-top: 10px;
+					margin-bottom: 10px;
+				}
+
+			}
+
+			label {
+				font-weight: bold;
+				font-size: @font-size3;
+
+				@media (max-width: 500px) {
+					font-size: 1em;
+				}
+			}
+
+			input {
+				font-size: @font-size3;
+
+				@media (max-width: 500px) {
+					font-size: 1.1em;
+				}
+			}
+
+			#response-container {
+				width: 35%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+
+				@media (max-width: 500px) {
+					width: 70%;
+				}
+
+				p {
+					font-size: @font-size3;
+
+					@media (max-width: 500px) {
+						font-size: 1em;
+					}
+				}
+			}
+
+			#submit-reset-container {
+				width: 15%;
+				display: flex;
+				justify-content: space-between;
+
+				@media (max-width: 500px) {
+					width: 40%;
+				}
+			}
+		}
+	}
+
+	footer {
+		#header-content;
+
+		nav {
+			#header-nav;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			
+			@media (max-width: 500px) {
+				flex-direction: row;
+			}
+
+		}
+	}
+}
+
+
+
 

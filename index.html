@@ -1,19 +1,163 @@
 <!doctype html>
-
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
 
-  <title>My Resume</title>
+		<title>Joe's Resume</title>
 
-  <link rel="stylesheet" href="css/index.css">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Oxygen&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/index.css">
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+		<![endif]-->
+	</head>
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+	<body>
+		<div id="container">
+			<header id="header-content">
+				<h1>Joe's Resume</h1>
+				<nav id="header-nav">
+					<a href="index.html">Home</a>
+					<a href="#">About</a>
+					<a href="https://bdrummo6.github.io/portfolio-website" target="_blank">Portfolio</a>
+					<a href="contact.html">Contact</a>
+				</nav>
+			</header>
 
-<body>
-  <h1>My Resume</h1>
-</body>
+			<main>
+				<h2>Let Me Introduce Myself!</h2>
+				<section id="intro">
+
+					<div id="intro-photo">
+						<img src="img/working.jpg" alt="image of the empire state building">
+					</div>
+
+					<div id="intro-text">
+						<p>
+							Aliquam elementum magna eros, ac posuere elvit tempus et.
+							Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+							ornare nisl. Nullam convallis augue justo, at imperdiet metus
+							scelerisque quis.
+						</p>
+
+					</div>
+				</section>
+
+				<section id="skills-container">
+					<div id="skills-list-container">
+						<h3>My Skills</h3>
+						<ul>
+							<li>Skill 1</li>
+							<li>Skill 2</li>
+							<li>Skill 3</li>
+							<li>Skill 4</li>
+							<li>Skill 5</li>
+							<li>Skill 6</li>
+						</ul>
+					</div>
+				</section>
+
+				<section id="work-history-container">
+					<table id="work-history-table">
+						<caption>Work History</caption>
+						<tr>
+							<th class="column-1">#</th>
+							<th>Position</th>
+							<th>Company</th>
+							<th class="columns-4-5">Start Date</th>
+							<th class="columns-4-5">End Date</th>
+						</tr>
+						<tr>
+							<td class="column-1">1</td>
+							<td>Position 1</td>
+							<td>Company 1</td>
+							<td class="columns-4-5">November 2018</td>
+							<td class="columns-4-5">Present Day</td>
+						</tr>
+						<tr>
+							<td class="column-1">2</td>
+							<td>Position 2</td>
+							<td>Company 2</td>
+							<td class="columns-4-5">February 2017</td>
+							<td class="columns-4-5">October 2018</td>
+						</tr>
+						<tr>
+							<td  class="column-1">3</td>
+							<td>Position 3</td>
+							<td>Company 3</td>
+							<td class="columns-4-5">April 2015</td>
+							<td class="columns-4-5">January 2017</td>
+						</tr>
+						<tr>
+							<td class="column-1">4</td>
+							<td>Position 4</td>
+							<td>Company 4</td>
+							<td class="columns-4-5">January 2014</td>
+							<td class="columns-4-5">March 2015</td>
+						</tr>
+						<tr>
+							<td class="column-1">5</td>
+							<td>Position 5</td>
+							<td>Company 5</td>
+							<td class="columns-4-5">December 2012</td>
+							<td class="columns-4-5">December 2013</td>
+						</tr>
+					</table>
+				</section>
+
+				<section id="contact-container">
+					<form action="" target="">
+						<h3>Contact Form</h3>
+						<div id="name-container">
+							<label for="name"></label>
+							<input type="text" name="name" id="name" placeholder="Enter your name" size="37">
+						</div>
+
+						<div id="email-container">
+							<label for="email"></label>
+							<input type="text" name="email" id="email" placeholder="Enter your email" size="37">
+						</div>
+
+						<div id="phone-container">
+							<label for="phone"></label>
+							<input type="text" name="phone" id="phone" placeholder="Enter your phone number" maxlength="14" size="37">
+						</div>
+
+						<div id="message-container">
+							<label for="message"></label>
+							<textarea id="message" rows="10" cols="50" placeholder="Enter your message"></textarea>
+						</div>
+
+						<div id="response-container">
+							<p>How would you like me to respond to your message?</p>
+
+							<div id="email-phone-response-container">
+								<label for="email-response">Email</label>
+								<input type="radio" name="response" id="email-response">
+
+								<label for="phone-response">Phone</label>
+								<input type="radio" name="response" id="phone-response">
+							</div>
+
+						</div>
+
+						<div id="submit-reset-container">
+							<input type="submit" name="submit-reset" id="submit-button" value="Submit">
+
+							<input type="reset" name="submit-reset" id="reset-button" value="Reset">
+						</div>
+					</form>
+				</section>
+			</main>
+
+			<footer>
+				<nav>
+					<a href="index.html">Home</a>
+					<a href="#">About</a>
+					<a href="https://bdrummo6.github.io/portfolio-website" target="_blank">Portfolio</a>
+					<a href="contact.html">Contact</a>
+				</nav>
+			</footer>
+		</div>
+	</body>
 </html>
